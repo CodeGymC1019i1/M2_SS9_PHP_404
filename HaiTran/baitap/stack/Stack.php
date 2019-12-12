@@ -32,7 +32,9 @@ class Stack
 
     public function top()
     {
-        return $this->stack[0];
+        $value = $this->stack[0];
+        array_shift($this->stack);
+        return $value;
     }
 
     public function isEmpty()
