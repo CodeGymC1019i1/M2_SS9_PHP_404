@@ -2,7 +2,7 @@
 
 include_once "../stack/Stack.php";
 
-$listInterger = new Stack(10);
+$listInterger = new \StackList\Stack(10);
 
 $listInterger->push(1);
 $listInterger->push(2);

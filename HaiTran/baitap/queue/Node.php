@@ -1,6 +1,6 @@
 <?php
 
-namespace Queue;
+namespace QueueList;
 
 class Node
 {

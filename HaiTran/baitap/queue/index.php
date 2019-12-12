@@ -2,7 +2,7 @@
 
 include_once "Queue.php";
 
-$queueList = new Queue();
+$queueList = new \QueueList\Queue();
 
 $queueList->enqueue(1);
 $queueList->enqueue(2);

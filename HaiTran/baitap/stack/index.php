@@ -2,7 +2,7 @@
 
 include_once "Stack.php";
 
-$stacklist = new Stack(6);
+$stacklist = new \StackList\Stack(6);
 
 $stacklist->push(1);
 $stacklist->push(2);

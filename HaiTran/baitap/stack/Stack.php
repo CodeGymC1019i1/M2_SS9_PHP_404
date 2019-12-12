@@ -1,5 +1,6 @@
 <?php
 
+namespace StackList;
 
 class Stack
 {

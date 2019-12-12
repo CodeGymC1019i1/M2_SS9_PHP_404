@@ -2,11 +2,13 @@
 
 include_once "../stack/Stack.php";
 
-$dataStack = new Stack(20);
+$dataStack = new \StackList\Stack(20);
 
-$dec = 100;
+$dec = 21;
 
-while ($dec >= 0) {
-    $bin = $dec % 2;
-    $dec = d
+while ($dec > 0) {
+    $dataStack->push($bin = $dec % 2);
+    $dec = floor($dec / 2);
 }
+
+echo implode('',$dataStack->stack);
