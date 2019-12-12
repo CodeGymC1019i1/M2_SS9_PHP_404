@@ -37,6 +37,10 @@ class QueuePatient
 
             $before->next =$newPatient;
             $newPatient->next = $current;
+
+            if ($current == $this->front) {
+                $this->front = $newPatient;
+            }
         }
     }
 
@@ -50,14 +54,16 @@ class QueuePatient
         return $removeNode;
     }
 
-    public function __toString()
+    public function toString()
     {
         // TODO: Implement __toString() method.
         $current = $this->front;
         $listPatient = '';
 
-        while ($current != null)
-            $listPatient .= $current->getName()." code: ".$current->getCode()."<br>";
+        while ($current != null) {
+            $listPatient .= $current->getName() . " code: " . $current->getCode() . "<br>";
+            $current = $current->next;
+        }
 
         return $listPatient;
     }

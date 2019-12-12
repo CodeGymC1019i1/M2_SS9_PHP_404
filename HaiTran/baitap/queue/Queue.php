@@ -1,5 +1,6 @@
 <?php
 
+namespace QueueList;
 include_once "Node.php";
 
 class Queue
@@ -16,7 +17,7 @@ class Queue
     {
         $currentBack = $this->back;
 
-        $this->back = new \Queue\Node($value);
+        $this->back = new \QueueList\Node($value);
 
         if ($this->isEmpty())
             $this->front = $this->back;
